@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#contact" class="nav-item">Contact</a>
+            <a href="#about" class="nav-item">About</a>
+        </div>
+        <div>
+            <button class="nav-item login-button" data-modal-target="#modal">Login</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div>Login and get started</div>
+            <button data-close-button class="close">X</button>
+        </div>
+        <div class="modal-body">
+            <form class="form-container">
+                <input placeholder="Enter your name" id="userName" />
+                <input placeholder="Enter your age" id="userAge" />
+                <input placeholder="Enter your Email" id="userEmail" />
+                <input placeholder="Enter your password" id="userPassword" />
+                <select name="country" id="country">
+                    <option value="">Select Country...</option>
+                    <option value="India">India</option>
+                    <option value="England">England</option>
+                    <option value="Australia">Austraila</option>
+                </select>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button data-close-button id="submitButton" class="submit-button">Submit</button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <section id="home">
+        <div class="heading">Home</div>
+        <div class="container">
+            <div class="grid-container">
+                <div class="header">Serail Number</div>
+                <div class="header">Name</div>
+                <div class="header">Class</div>
+                <div class="header">Section</div>
+                <div class="item">1</div>
+                <div class="item">abcd</div>
+                <div class="item">12</div>
+                <div class="item">A</div>
+                <div class="item">1</div>
+                <div class="item">abcd</div>
+                <div class="item">12</div>
+                <div class="item">A</div>
+                <div class="item">1</div>
+                <div class="item">abcd</div>
+                <div class="item">12</div>
+                <div class="item">A</div>
+                <div class="item">1</div>
+                <div class="item">abcd</div>
+                <div class="item">12</div>
+                <div class="item">A</div>
+                <div class="item">1</div>
+                <div class="item">abcd</div>
+                <div class="item">12</div>
+                <div class="item">A</div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" >
+        <div class="heading">Contact details</div>
+        <div class="container contact-container">
+            
+            <div>Name: <span id="displayName"></span></div>
+            <div>Age: <span id="displayAge"></span></div>
+            <div>Email: <span id="displayEmail"></span></div>
+            <div>Country: <span id="displayCountry"></span></div>
+        </div>
+        <div class="note-container"><span>*</span>Login to view your contact details here</div>
+    </section>
+    <section id="about">
+        <div class="heading">About Section</div>
+        <div class="container">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et quos natus quasi accusamus nam qui,
+            nesciunt ullam vero, rem quidem placeat non similique laborum? Consequatur iste inventore explicabo
+            voluptatibus et ut veniam earum cum autem non sequi minus mollitia sit accusamus odit possimus dignissimos,
+            neque aperiam eius suscipit omnis? Dolores animi beatae quod nemo pariatur delectus rerum commodi
+            exercitationem nobis voluptates dolore nesciunt labore quas iste maiores eum, velit debitis repudiandae
+            deserunt optio distinctio dignissimos saepe corrupti eligendi. Esse eius ab aut soluta quibusdam quia
+            recusandae. Nisi perferendis necessitatibus, natus, quaerat, reprehenderit atque maiores reiciendis suscipit
+            facilis eius explicabo.
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S. No.</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>abcd</td>
+                        <td>10</td>
+                        <td>ab@cd.com</td>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>abcd</td>
+                        <td>10</td>
+                        <td>ab@cd.com</td>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>abcd</td>
+                        <td>10</td>
+                        <td>ab@cd.com</td>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>abcd</td>
+                        <td>10</td>
+                        <td>ab@cd.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+
+</html>
